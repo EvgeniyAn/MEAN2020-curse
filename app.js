@@ -19,6 +19,7 @@ app.use(passport.initialize());
 require('./middleware/passport')(passport);
 
 app.use(require('morgan')('dev'));//logs request in console
+app.use('/uploads', express.static('uploads')); //делаем папку uploads статической
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(require('cors')());

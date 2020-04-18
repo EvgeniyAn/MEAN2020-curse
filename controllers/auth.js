@@ -32,8 +32,6 @@ module.exports.login = async function (req, res) {
             message: 'Пользователь с таким email не найден.'
         });
     }
-
-
 };
 
 module.exports.register = async function (req, res) {
